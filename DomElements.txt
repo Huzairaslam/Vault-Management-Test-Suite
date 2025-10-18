@@ -1,0 +1,7 @@
+<span class="label">Products</span>
+
+<select class="table-select" aria-label="Select product type"><option value="" disabled="">Choose...</option><option value="e280a2c2-e775-45fc-0037-08de0c95103b">bills</option><option value="b9928099-8ad3-4472-52a1-08de0bd79421">eMPLOYEE INFO</option><option value="2f43293e-bc47-44a1-5a39-08de0bd9a1aa">PT_1ca9f2a1002e469c92560689ee5ec548</option><option value="e93b68e4-a5fb-487d-5a31-08de0bd9a1aa">PT_d95733715bf844cbae0e685dd5662a3a</option><option value="c170df52-5eed-4869-a0b6-08de0d58cf3a">SampleProductType</option><option value="1bf43392-be03-4536-5a23-08de0bd9a1aa">TestProductType_70fd81a4d1a843edb6f49844e451be3a</option></select><html lang="en
+
+<button class="btn" type="button">Add</button>
+
+<button class="btn" type="button">Add</button>
