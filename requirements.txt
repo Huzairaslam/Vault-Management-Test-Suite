@@ -1,0 +1,10 @@
+streamlit==1.50.0
+robotframework==7.3.2
+robotframework-seleniumlibrary==6.8.0
+robotframework-jsonlibrary==0.5
+allure-robotframework==2.15.0
+selenium==4.36.0
+webdriver-manager==2.3.0
+pandas==2.3.3
+requests==2.32.5
+altair==5.5.0
