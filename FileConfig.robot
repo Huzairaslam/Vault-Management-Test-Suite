@@ -44,4 +44,3 @@ Adding File Configuration by Clicking Create Button
     [Documentation]     Clicking on Create Button to add file configuration
     Wait Until Element Is Visible    ${Create_Btn}    2s
     Click Element    ${Create_Btn}
-

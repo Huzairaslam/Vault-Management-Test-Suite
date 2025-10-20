@@ -23,4 +23,3 @@ ${StorageTypeName_Input}    xpath=//input[@data-tour="name"]
 ${HomeBtn}   xpath=//span[normalize-space()='Home']
 ${StoragesBtn}  xpath=//span[normalize-space()='Storages']
 ${StorageName}  xpath=//input[@id='storage-name-input']
-

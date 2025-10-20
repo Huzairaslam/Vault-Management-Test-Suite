@@ -5,3 +5,5 @@
 <button class="btn" type="button">Add</button>
 
 <button class="btn" type="button">Add</button>
+
+<input data-tour="name" placeholder="e.g. Building" value="">

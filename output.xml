@@ -1,195 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.3 on win32)" generated="2025-10-18T03:36:20.992413" rpa="false" schemaversion="5">
-<suite id="s1" name="FileConfig" source="C:\Users\Huzair\Desktop\VaultManagement_Script\FileConfig.robot">
-<test id="s1-t1" name="Login To Website" line="7">
+<robot generator="Robot 7.3.2 (Python 3.10.3 on win32)" generated="2025-10-20T03:14:57.998434" rpa="false" schemaversion="5">
+<suite id="s1" name="Storages" source="C:\Users\Huzair\Desktop\VaultManagement_Script\Storages.robot">
+<test id="s1-t1" name="Login To Website" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:21.537784" level="INFO">Opening browser 'chrome' to base url 'http://vm.3em.tech'.</msg>
+<msg time="2025-10-20T03:14:58.423526" level="INFO">Opening browser 'chrome' to base url 'http://vm.3em.tech'.</msg>
 <arg>http://vm.3em.tech</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-18T03:36:21.537126" elapsed="5.513039"/>
+<status status="PASS" start="2025-10-20T03:14:58.423526" elapsed="3.512174"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T03:36:32.061051" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-10-20T03:15:06.949270" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T03:36:27.052162" elapsed="5.008889"/>
+<status status="PASS" start="2025-10-20T03:15:01.937700" elapsed="5.011570"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.062048" elapsed="0.037802"/>
+<status status="PASS" start="2025-10-20T03:15:06.961202" elapsed="0.079615"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:32.102853" level="INFO">Executing JavaScript:
+<msg time="2025-10-20T03:15:07.040817" level="INFO">Executing JavaScript:
 document.body.style.zoom="50%"
 Without any arguments.</msg>
 <arg>document.body.style.zoom="50%"</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.100847" elapsed="0.012966"/>
+<status status="PASS" start="2025-10-20T03:15:07.040817" elapsed="0.000000"/>
 </kw>
 <doc>Open website and log in</doc>
-<status status="PASS" start="2025-10-18T03:36:21.534172" elapsed="10.585139"/>
+<status status="PASS" start="2025-10-20T03:14:58.421532" elapsed="8.619285"/>
 </test>
-<test id="s1-t2" name="Locating File Config" line="14">
+<test id="s1-t2" name="Locating Product Tab" line="12">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${FileConfigBtn}</arg>
+<arg>${StoragesBtn}</arg>
 <arg>2s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.133275" elapsed="0.143056"/>
+<status status="PASS" start="2025-10-20T03:15:07.040817" elapsed="0.059934"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:32.277328" level="INFO">Clicking element 'xpath=//span[normalize-space()='File Configs']'.</msg>
-<arg>${FileConfigBtn}</arg>
+<msg time="2025-10-20T03:15:07.101749" level="INFO">Clicking element 'xpath=//span[normalize-space()='Storages']'.</msg>
+<arg>${StoragesBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.276331" elapsed="0.066821"/>
+<status status="PASS" start="2025-10-20T03:15:07.100751" elapsed="0.097494"/>
 </kw>
-<doc>Locate to File Config Tab</doc>
-<status status="PASS" start="2025-10-18T03:36:32.132275" elapsed="0.214866"/>
+<doc>Locate to Product Types Tab</doc>
+<status status="PASS" start="2025-10-20T03:15:07.040817" elapsed="0.159423"/>
 </test>
-<test id="s1-t3" name="Entering Valid File Name" line="19">
+<test id="s1-t3" name="Creating New Storage" line="17">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${FileName_Input}</arg>
+<arg>${StorageName}</arg>
 <arg>2s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.354126" elapsed="0.249061"/>
+<status status="PASS" start="2025-10-20T03:15:07.207221" elapsed="0.058842"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:32.604183" level="INFO">Typing text 'test' into text field 'xpath=//input[@data-tour="fileName"]'.</msg>
-<arg>${FileName_Input}</arg>
-<arg>test</arg>
+<msg time="2025-10-20T03:15:07.267061" level="INFO">Typing text 'TestingStorage1' into text field 'xpath=//input[@id='storage-name-input']'.</msg>
+<arg>${StorageName}</arg>
+<arg>TestingStorage1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.603187" elapsed="0.123026"/>
+<status status="PASS" start="2025-10-20T03:15:07.267061" elapsed="0.150941"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T03:36:33.742017" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T03:36:32.728207" elapsed="1.014557"/>
-</kw>
-<doc>Creating new valid file</doc>
-<status status="PASS" start="2025-10-18T03:36:32.352128" elapsed="1.392629"/>
-</test>
-<test id="s1-t4" name="Entering Valid Column Name" line="24">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ColumnName_Input_1}</arg>
-<arg>2s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:33.756726" elapsed="0.021954"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:33.779692" level="INFO">Typing text 'Col-1' into text field 'xpath=//input[@id="col-name-0"]'.</msg>
-<arg>${ColumnName_Input_1}</arg>
-<arg>Col-1</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:33.779692" elapsed="0.170580"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${DataType_Select}</arg>
-<arg>3s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:33.953781" elapsed="0.018940"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:33.973718" level="INFO">Selecting options from selection list 'xpath=//select[contains(@class,"table-select")]' by label Numeric.</msg>
-<arg>${DataType_Select}</arg>
-<arg>Numeric</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-10-18T03:36:33.973718" elapsed="0.081468"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T03:36:36.060428" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-10-20T03:15:09.431535" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T03:36:34.056172" elapsed="2.004256"/>
+<status status="PASS" start="2025-10-20T03:15:07.419000" elapsed="2.012535"/>
 </kw>
-<doc>Creating first column</doc>
-<status status="PASS" start="2025-10-18T03:36:33.755728" elapsed="2.305697"/>
-</test>
-<test id="s1-t5" name="Clicking Add More Column Button" line="31">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${AddColumn_Btn}</arg>
-<arg>2s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:36.068406" elapsed="0.020062"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:36.089459" level="INFO">Clicking element 'xpath=//span[normalize-space(.)="Add Column"]'.</msg>
-<arg>${AddColumn_Btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:36.089459" elapsed="0.073161"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T03:36:38.179274" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T03:36:36.165611" elapsed="2.013663"/>
-</kw>
-<doc>Adding second column</doc>
-<status status="PASS" start="2025-10-18T03:36:36.067408" elapsed="2.113863"/>
-</test>
-<test id="s1-t6" name="Entering Second Column" line="36">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ColumnName_Input_2}</arg>
-<arg>2s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:38.186258" elapsed="0.021686"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:38.208941" level="INFO">Typing text 'Col-2' into text field 'xpath=//input[@id="col-name-1"]'.</msg>
-<arg>${ColumnName_Input_2}</arg>
-<arg>Col-2</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:38.207944" elapsed="0.106980"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${DataType_Select}</arg>
-<arg>3s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:38.316918" elapsed="0.015011"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:38.332927" level="INFO">Selecting options from selection list 'xpath=//select[contains(@class,"table-select")]' by label AlphaNumeric.</msg>
-<arg>${DataType_Select}</arg>
-<arg>AlphaNumeric</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-10-18T03:36:38.331929" elapsed="0.078790"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T03:36:40.419415" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T03:36:38.412714" elapsed="2.006701"/>
-</kw>
-<doc>Creating second column</doc>
-<status status="PASS" start="2025-10-18T03:36:38.185261" elapsed="2.236149"/>
-</test>
-<test id="s1-t7" name="Adding File Configuration by Clicking Create Button" line="43">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Create_Btn}</arg>
-<arg>2s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T03:36:40.432380" elapsed="0.033910"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-18T03:36:40.468285" level="INFO">Clicking element 'xpath=//button[@data-tour="create"]'.</msg>
-<arg>${Create_Btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T03:36:40.467287" elapsed="0.086768"/>
-</kw>
-<doc>Clicking on Create Button to add file configuration</doc>
-<status status="PASS" start="2025-10-18T03:36:40.431383" elapsed="0.126662"/>
+<doc>Creating New Storage</doc>
+<status status="PASS" start="2025-10-20T03:15:07.206223" elapsed="2.225312"/>
 </test>
 <doc>File Configuration tests - automates file configuration creation using SeleniumLibrary.</doc>
-<status status="PASS" start="2025-10-18T03:36:21.095265" elapsed="19.489708"/>
+<status status="PASS" start="2025-10-20T03:14:58.069994" elapsed="11.392665"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="FileConfig" id="s1" pass="7" fail="0" skip="0">FileConfig</stat>
+<stat name="Storages" id="s1" pass="3" fail="0" skip="0">Storages</stat>
 </suite>
 </statistics>
 <errors>
